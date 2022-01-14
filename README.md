@@ -6,7 +6,7 @@ A Conversão de Distância é uma aplicação web construída em ***ASP.Net Core
 
 Foi criado dentro do projeto um arquivo `Dockerfile` contendo o passo-a-passo (receita de bolo) de criação da imagem *Docker* que posteriormente será utilizada para execução da aplicação em um container.
 
-Como boa prática, o *Dockerfile* deste projeto faz a construção da imagem em duas etapas para garantir que a imagem que será utilizada para criação do container possua apenas o necessário para execução da aplicação e com isso ficando bem menor que  o esperado.
+Como boa prática, o `Dockerfile` deste projeto faz a construção da imagem em duas etapas para garantir que a imagem que será utilizada para criação do container possua apenas o necessário para execução da aplicação e com isso ficando bem menor que  o esperado.
 
     FROM mcr.microsoft.com/dotnet/sdk:5.0  AS  build
     WORKDIR  /source
